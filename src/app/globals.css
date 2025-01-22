@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: #f5f5f5;
+		--foreground: #414141;
+		--primary: #cc3366;
+		--primary-foreground: #fff;
+		--secondary: #ff8a40;
+		--secondary-foreground: #fff;
+		--muted: #666666;
+		--muted-foreground: #666666;
+		--accent: #e62586;
+		--accent-foreground: #fff;
+		--destructive: #990000;
+		--destructive-foreground: #fff;
+		--card: #ffffff;
+		--card-foreground: #ffffff;
+		--popover: #ffffff;
+		--popover-foreground: #ffffff;
+		--border: #e9f0fb;
+		--input: #e9f0fb;
+		--ring: #4c9ff5;
+		--radius: 0.3rem;
+		--chart-1: #e24d3c;
+		--chart-2: #289d65;
+		--chart-3: #305968;
+		--chart-4: #c9e761;
+		--chart-5: #f8b640;
+	}
+}
+
+* {
+	@apply m-0 p-0 box-border antialiased;
+}
+body {
+	@apply font-sans font-normal bg-background text-foreground;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-display;
+}
+a {
+	@apply block text-primary hover:text-accent transition-colors duration-300 hover:animate-pop cursor-pointer;
+}
+
+/* Estilos del menú móvil */
+.menu-web a,
+.menu-web button {
+	@apply font-sans font-medium bg-transparent hover:bg-transparent text-sm text-primary hover:text-accent uppercase border border-primary hover:border-accent rounded-md p-2;
+}

@@ -1,0 +1,94 @@
+{
+	{
+		"name": "nextjs-15-anxelli",
+		"description": "Developed with love and coffee by @anxelli 🖤 | El susurro del caos, quebrantando el orden celestial.",
+		"version": "0.0.1",
+		"scripts": {
+			"dev": "next dev",
+			"turbo": "next dev --turbopack",
+			"build": "next build",
+			"start": "next start",
+			"lint": "next lint"
+		},
+		"repository": {
+			"type": "git",
+			"url": "https://github.com/anxelli/nextjs-15-anxelli.git"
+		},
+		"homepage": "https://github.com/anxelli/nextjs-15-anxelli",
+		"bugs": {
+			"url": "https://github.com/anxelli/nextjs-15-anxelli/issues"
+		},
+		"keywords": [
+			"nextjs",
+			"nextjs-15",
+			"typescript",
+			"react-19",
+			"app-router",
+			"turbopack",
+			"metadata",
+			"optimized-seo",
+			"schemas",
+			"vercel-analytics",
+			"google-tag-manager",
+			"tailwindcss",
+			"shadcn-ui",
+			"framer-motion",
+			"lucide-react",
+			"react-icons",
+			"tailwindcss-custom-animations"
+		],
+		"author": {
+			"name": "Angel Amaro",
+			"email": "anxelli.dev@icloud.com",
+			"github": "@anxelli",
+			"website": "https://x.com/anxelli_dev"
+		},
+		"contributors": [
+			{
+				"name": "Angel Amaro",
+				"email": "anxelli.dev@icloud.com",
+				"github": "@anxelli",
+				"x": "@anxelli_dev"
+			},
+			{
+				"name": "Nyxia Lovelace",
+				"website": "https://x.com/NyxiaLovelace",
+				"role": "Diosa del caos digital y coautora sarcástica."
+			}
+		],
+		"private": false,
+		"license": "GPL-3.0-or-later",
+	"dependencies": {
+		"@next/third-parties": "15.1.5",
+		"@radix-ui/react-dialog": "^1.1.4",
+		"@radix-ui/react-navigation-menu": "1.2.3",
+		"@radix-ui/react-slot": "^1.1.1",
+		"@vercel/analytics": "1.4.1",
+		"@vercel/speed-insights": "1.1.0",
+		"class-variance-authority": "0.7.1",
+		"clsx": "2.1.1",
+		"embla-carousel-autoplay": "8.5.2",
+		"embla-carousel-react": "8.5.2",
+		"framer-motion": "12.0.0",
+		"lucide-react": "0.473.0",
+		"next": "15.1.5",
+		"next-view-transitions": "0.3.4",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
+		"react-icons": "5.4.0",
+		"schema-dts": "1.1.2",
+		"tailwind-merge": "2.6.0",
+		"tailwindcss-animate": "1.0.7"
+	},
+	"devDependencies": {
+		"typescript": "5.7.3",
+		"@types/node": "22.10.7",
+		"@types/react": "19.0.7",
+		"@types/react-dom": "19.0.3",
+		"postcss": "8.5.1",
+		"tailwindcss": "3.4.17",
+		"eslint": "9.18.0",
+		"eslint-config-next": "15.1.5",
+		"@eslint/eslintrc": "3.2.0"
+	}
+}
