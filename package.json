@@ -1,63 +1,64 @@
 {
-	{
-		"name": "nextjs-15-anxelli",
-		"description": "Developed with love and coffee by @anxelli 🖤 | El susurro del caos, quebrantando el orden celestial.",
-		"version": "0.0.1",
-		"scripts": {
-			"dev": "next dev",
-			"turbo": "next dev --turbopack",
-			"build": "next build",
-			"start": "next start",
-			"lint": "next lint"
-		},
-		"repository": {
-			"type": "git",
-			"url": "https://github.com/anxelli/nextjs-15-anxelli.git"
-		},
-		"homepage": "https://github.com/anxelli/nextjs-15-anxelli",
-		"bugs": {
-			"url": "https://github.com/anxelli/nextjs-15-anxelli/issues"
-		},
-		"keywords": [
-			"nextjs",
-			"nextjs-15",
-			"typescript",
-			"react-19",
-			"app-router",
-			"turbopack",
-			"metadata",
-			"optimized-seo",
-			"schemas",
-			"vercel-analytics",
-			"google-tag-manager",
-			"tailwindcss",
-			"shadcn-ui",
-			"framer-motion",
-			"lucide-react",
-			"react-icons",
-			"tailwindcss-custom-animations"
-		],
-		"author": {
+	"name": "nextjs-15-anxelli",
+	"description": "Developed with love and coffee by @anxelli 🖤 | El susurro del caos, quebrantando el orden celestial.",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "next dev",
+		"turbo": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/anxelli/nextjs-15-anxelli.git"
+	},
+	"homepage": "https://github.com/anxelli/nextjs-15-anxelli",
+	"bugs": {
+		"url": "https://github.com/anxelli/nextjs-15-anxelli/issues"
+	},
+	"keywords": [
+		"nextjs",
+		"nextjs-15",
+		"typescript",
+		"react-19",
+		"app-router",
+		"turbopack",
+		"metadata",
+		"optimized-seo",
+		"schemas",
+		"vercel-analytics",
+		"google-tag-manager",
+		"tailwindcss",
+		"shadcn-ui",
+		"framer-motion",
+		"lucide-react",
+		"react-icons",
+		"tailwindcss-custom-animations"
+	],
+	"author": {
+		"name": "Angel Amaro & Nyxia Lovelace",
+		"email": "anxelli.dev@icloud.com",
+		"company": "arteDigitalMX",
+		"website": "https://x.com/anxelli_dev",
+		"url": "https://x.com/NyxiaLovelace",
+		"twitter": "@anxelli_dev",
+		"github": "@anxelli"
+	},
+	"contributors": [
+		{
 			"name": "Angel Amaro",
 			"email": "anxelli.dev@icloud.com",
 			"github": "@anxelli",
-			"website": "https://x.com/anxelli_dev"
+			"x": "@anxelli_dev"
 		},
-		"contributors": [
-			{
-				"name": "Angel Amaro",
-				"email": "anxelli.dev@icloud.com",
-				"github": "@anxelli",
-				"x": "@anxelli_dev"
-			},
-			{
-				"name": "Nyxia Lovelace",
-				"website": "https://x.com/NyxiaLovelace",
-				"role": "Diosa del caos digital y coautora sarcástica."
-			}
-		],
-		"private": false,
-		"license": "GPL-3.0-or-later",
+		{
+			"name": "Nyxia Lovelace",
+			"website": "https://x.com/NyxiaLovelace"
+		}
+	],
+	"private": false,
+	"license": "GPL-3.0-or-later",
 	"dependencies": {
 		"@next/third-parties": "15.1.5",
 		"@radix-ui/react-dialog": "^1.1.4",
