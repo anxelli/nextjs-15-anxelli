@@ -49,9 +49,3 @@ h6 {
 a {
 	@apply block text-primary hover:text-accent transition-colors duration-300 hover:animate-pop cursor-pointer;
 }
-
-/* Estilos del menú móvil */
-.menu-web a,
-.menu-web button {
-	@apply font-sans font-medium bg-transparent hover:bg-transparent text-sm text-primary hover:text-accent uppercase border border-primary hover:border-accent rounded-md p-2;
-}

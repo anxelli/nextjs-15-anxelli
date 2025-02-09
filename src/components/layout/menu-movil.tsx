@@ -5,6 +5,8 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
+import { Menu } from 'lucide-react'
+
 import { Button } from '@/components/ui/button'
 import {
 	Sheet,
@@ -17,13 +19,16 @@ import {
 	SheetTrigger
 } from '@/components/ui/sheet'
 
-import { Ellipsis, Menu } from 'lucide-react'
+interface Links {
+	title: string
+	href: string
+	active: boolean
+}
+interface NavBarProps {
+	links: Links[]
+}
 
-export function MenuMovil({
-	links
-}: {
-	links: { title: string; href: string }[]
-}) {
+export function MenuMovil({ links }: NavBarProps) {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const closeSheet = () => {
@@ -40,7 +45,7 @@ export function MenuMovil({
 			<SheetContent
 				side="left"
 				className={cn(
-					`flex flex-col items-start justify-between gap-4 p-4 bg-foreground text-background`
+					`flex flex-col items-start justify-between gap-4 p-4 bg-white text-foreground`
 				)}
 			>
 				<SheetHeader>
@@ -59,23 +64,14 @@ export function MenuMovil({
 
 				<div className="w-full">
 					<ul className={cn(`w-max grid gap-2`)}>
-						<li>
-							<Link
-								href={`/`}
-								className={cn(
-									`block w-full px-2 py-1 text-sm text-primary border border-primary rounded-md active:text-accent active:border-accent`
-								)}
-								onClick={closeSheet}
-							>
-								Inicio
-							</Link>
-						</li>
 						{links.map((item, i) => (
 							<li key={i}>
 								<Link
 									href={item.href}
 									className={cn(
-										`block w-full p-1 ml-2 text-sm text-primary border border-primary rounded-md active:text-accent active:border-accent`
+										`block w-full px-2 py-1 text-sm bg-transparent text-primary border border-primary rounded-md hover:bg-primary hover:text-white hover:border-white`,
+										item.active &&
+											`bg-primary text-white border-white`
 									)}
 									onClick={closeSheet}
 								>

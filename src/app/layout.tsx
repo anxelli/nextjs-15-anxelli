@@ -26,6 +26,45 @@ import { ViewTransitions } from 'next-view-transitions'
 import NavBar from '@/components/layout/navbar'
 import Footer from '@/components/layout/footer'
 
+//! Menu links
+const links: { title: string; href: string; active: boolean }[] = [
+	{
+		title: 'Home',
+		href: '/',
+		active: true
+	},
+	{
+		title: 'Services',
+		href: '/services',
+		active: false
+	},
+	{
+		title: 'Products',
+		href: '/products',
+		active: false
+	},
+	{
+		title: 'Blog',
+		href: '/blog',
+		active: false
+	},
+	{
+		title: 'Gallery',
+		href: '/gallery',
+		active: false
+	},
+	{
+		title: 'About Us',
+		href: '/about-us',
+		active: false
+	},
+	{
+		title: 'Contact',
+		href: '/contact',
+		active: false
+	}
+]
+
 export default function RootLayout({
 	children
 }: Readonly<{
@@ -82,7 +121,7 @@ export default function RootLayout({
 							`${fontSans.variable} ${fontDisplay.variable} antialiased`
 						)}
 					>
-						<NavBar />
+						<NavBar links={links} />
 
 						<div
 							className={cn(

@@ -11,16 +11,37 @@ import {
 	NavigationMenuTrigger
 } from '@/components/ui/navigation-menu'
 
-export function Menu({ links }: { links: { title: string; href: string }[] }) {
+interface Links {
+	title: string
+	href: string
+	active: boolean
+}
+interface NavBarProps {
+	links: Links[]
+}
+
+export function Menu({ links }: NavBarProps) {
 	return (
 		<>
 			<div className={cn(`menu-web`)}>
 				<NavigationMenu>
-					<NavigationMenuList className={cn(`flex gap-4`)}>
-						<NavigationMenuItem>
-							<Link href="/">Inicio</Link>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
+					<NavigationMenuList className={cn(`flex gap-2`)}>
+						{links.map((item, i) => (
+							<NavigationMenuItem key={i}>
+								<Link
+									href={item.href}
+									className={cn(
+										`bg-transparent border-2 border-primary text-sm xl:text-base text-primary rounded-md p-1 hover:bg-primary hover:text-white`,
+										item.active && `bg-primary text-white`
+									)}
+								>
+									{item.title}
+								</Link>
+							</NavigationMenuItem>
+						))}
+
+						{/* Posible uso de sub-menú */}
+						{/* <NavigationMenuItem>
 							<NavigationMenuTrigger>
 								Celosías de metal
 							</NavigationMenuTrigger>
@@ -44,18 +65,7 @@ export function Menu({ links }: { links: { title: string; href: string }[] }) {
 									))}
 								</ul>
 							</NavigationMenuContent>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<Link href="/nosotros">Nosotros</Link>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<Link href="/envios-e-instalaciones">
-								Envíos e instalaciones
-							</Link>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<Link href="/contacto">Contacto</Link>
-						</NavigationMenuItem>
+						</NavigationMenuItem> */}
 					</NavigationMenuList>
 				</NavigationMenu>
 			</div>
